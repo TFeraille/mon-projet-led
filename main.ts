@@ -1,0 +1,10 @@
+let strip = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
+let Gauche = strip.range(0, 2)
+strip = strip.range(2, 0)
+let Droite = strip.range(3, 2)
+strip.showRainbow(1, 360)
+basic.forever(function () {
+    Droite.showColor(neopixel.colors(NeoPixelColors.Blue))
+    strip.showColor(neopixel.colors(NeoPixelColors.White))
+    strip.showColor(neopixel.colors(NeoPixelColors.Red))
+})
