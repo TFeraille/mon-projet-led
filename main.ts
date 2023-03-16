@@ -5,6 +5,9 @@ function Clignote_Droite () {
     basic.pause(500)
 }
 input.onButtonPressed(Button.A, function () {
+	
+})
+input.onPinPressed(TouchPin.P2, function () {
     for (let index = 0; index <= 2; index++) {
         Clignote_Gauche()
     }
